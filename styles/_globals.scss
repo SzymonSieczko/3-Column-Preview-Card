@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+
+body{
+    display: grid;
+    //grid-template-columns: 1fr;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: $bck-btn-heading-color;
+    font-size: 15px;
+}
+
+.container{
+    display: flex;
+    //flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card{
+    width: 300px;
+    padding: 50px;
+    position: relative;
+    img{
+        //margin-bottom: 20px;
+    }
+    
+}
+
+.heading{
+    margin: 30px 0;
+    color:$bck-btn-heading-color;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+}
+
+.paragraph{
+    margin-bottom: 100px;
+    line-height: 1.5;
+    color:$paragraphs-color;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.sedans{
+    background-color: $bright-orange;
+    .btn{
+        color:$bright-orange;
+    }
+}
+
+.suvs{
+    background-color: $dark-cyan;
+    .btn{
+        color:$dark-cyan;
+    }
+}
+.luxury{
+    background-color: $very-dark-cyan;
+    .btn{
+        color:$very-dark-cyan;
+    }
+}
+
+.btn{
+    position: absolute;
+    bottom:50px;
+    // left:50%;
+    // transform: translateX(-50%);
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: $bck-btn-heading-color;
+    outline: none;
+    cursor: pointer;
+    border: solid $bck-btn-heading-color 1px;
+    color: inherit;
+    transition: 300ms ease-in-out;
+
+    &:hover{
+        background-color: transparent;
+        color:$bck-btn-heading-color;
+    }
+}
+
+.attribution{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media (max-width:930px)
+{
+    .container{
+        margin-top:50px;
+        flex-direction: column;
+    }
+    // .card{
+    //     border-radius: 30px;
+    // }
+}
